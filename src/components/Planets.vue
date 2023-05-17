@@ -1,11 +1,10 @@
 <script setup>
-import { defineProps } from 'vue';
+
 
 const props = defineProps({
     planets: {
         type: Array,
         default: () => [
-
             { name: "Sol" },
             { name: "Mercurio" },
             { name: "Venus" },
@@ -16,97 +15,52 @@ const props = defineProps({
             { name: "Urano" },
             { name: "Neptuno" },
         ],
-
     },
 });
 
 
 
-
-
+const getPlanet = (planetName) => {
+    switch (planetName) {
+        case "Sol": 
+            return "../../src/assets/sol.png";
+        case "Mercurio":
+            return "../../src/assets/mercurio.png";
+        case "Venus":
+            return "../../src/assets/venus.png";
+        case "Tierra":
+            return "../../src/assets/earth.png";
+        case "Marte":
+            return "../../src/assets/mars.png";
+        case "Jupiter":
+            return "../../src/assets/jupiter.png";
+        case "Saturno":
+            return "../../src/assets/saturn.png";
+        case "Urano":
+            return "../../src/assets/urano.png";
+        case "Neptuno":
+            return "../../src/assets/neptuno.png";
+        default:
+            return "";
+    }
+};
 
 </script>
 
 <template>
+   
     <ol class="timeline">
-        <li class="timeline-item">
+        <li v-for="planet in planets" :key="planet.name" class="timeline-item">
             <span class="timeline-item-icon | avatar-icon">
                 <i class="avatar">
-                    <img src="../assets/sol.png" />
+                    <img :src="getPlanet(planet.name)" alt="name of planet" />
                 </i>
             </span>
-
+            <span class="timeline-item-name">{{ planet.name }}</span>
         </li>
-
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/mercurio.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/venus.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/earth.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/mars.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/jupiter.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/saturn.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/urano.png" />
-                </i>
-            </span>
-
-        </li>
-        <li class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
-                    <img src="../assets/neptuno.png" />
-                </i>
-            </span>
-
-        </li>
-
     </ol>
 </template>
-  
-
+   
 <style lang="scss" scoped>
 *,
 *:before,
@@ -135,7 +89,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 32px 0 32px 32px;
-  border-left: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(245, 0, 0);
   font-size: 1.125rem;
 }
 .timeline-item {
@@ -193,7 +147,23 @@ img {
       object-fit: cover;
   }
 }
+
+.timeline-item-name{
+    display: none;
+}
+
+.timeline-item:hover .timeline-item-name{
+    display: block;
+}
 </style>
+
+
+
+
+
+
+  
+
 
 
 
