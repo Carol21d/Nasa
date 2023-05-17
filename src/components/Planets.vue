@@ -154,6 +154,9 @@ img {
 
 .timeline-item:hover .timeline-item-name{
     display: block;
+    text-decoration: underline;
+    display: flex;
+ margin-top: 0.2em;
 }
 </style>
 
