@@ -1,9 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Planets from './components/Planets.vue';
 </script>
 
 <template>
+  <Planets/>
   <RouterView />
 </template>
 
