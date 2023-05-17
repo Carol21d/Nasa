@@ -1,10 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Planets from './components/Planets.vue';
+import Ellipse from './components/Ellipse.vue'
 </script>
 
 <template>
-  <Planets/>
+  <!-- <Planets/> -->
+ <Ellipse/>
   <RouterView />
 </template>
 
