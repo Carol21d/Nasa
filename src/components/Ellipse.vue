@@ -11,12 +11,12 @@
   
   <style lang="scss">
   .ellipses-container {
-    width: 30rem;
-    height: 30rem;
+    width: 35.9rem;
+    height: 35.9rem;
     border-radius: 50%;
     margin: 0 auto;
     position: relative;
-    top: 5rem;
+    top: 9rem;
   }
   
   .ellipses {
@@ -30,14 +30,14 @@
     width: 100%;
     height: 100%;
     border-width: 1px;
-    border-color: rgba(12, 12, 12, 0.1);
+    border-color: rgba(253, 253, 253, 0.1);
     animation: ellipsesOrbit 15s ease-in-out infinite;
   }
   
   .ellipses__outer--thick {
     width: 99.5%;
     height: 99.5%;
-    border-color: rgb(252, 0, 0) transparent;
+    border-color: rgb(248, 245, 245) transparent;
     border-width: 2px;
     transform: rotate(-45deg);
     animation: ellipsesRotate 15s ease-in-out infinite;
@@ -47,9 +47,9 @@
     width: 1.5rem;
     height: 1.5rem;
     border-width: 2px;
-    border-color: rgb(0, 255, 128);
-    top: 2.5rem;
-    right: 23.375rem;
+    border-color: rgb(248, 248, 247);
+    top: 0.6rem;
+    right: 24.374rem;
   }
   
   .ellipses__orbit:before {
@@ -58,7 +58,7 @@
     height: 0.5rem;
     border-radius: 50%;
     display: inline-block;
-    background-color: blue;
+    background-color: rgb(247, 246, 243);
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -71,8 +71,8 @@
     width: 1.5rem;
     height: 1.5rem;
     border-width: 2px;
-    border-color: rgb(255, 0, 208);
-    top: 2.5rem;
+    border-color: rgb(255, 255, 255);
+    top: 30.1rem;
     right: 4.755rem;
   }
   
@@ -82,7 +82,7 @@
     height: 0.5rem;
     border-radius: 50%;
     display: inline-block;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     left: 0;
     right: 0;

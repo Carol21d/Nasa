@@ -1,15 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-// import Planets from './components/Planets.vue';
-// import Ellipse from './components/Ellipse.vue'
-import Menu from './components/Menu.vue'
+
+import HomeView from './views/HomeView.vue';
 </script>
 
 <template>
-  <!-- <Planets/> -->
- <!-- <Ellipse/> -->
- <Menu/>
-  <RouterView />
+
+ <HomeView/>
+  <!-- <RouterView /> -->
 </template>
 
 <style scoped></style>

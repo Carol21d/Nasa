@@ -30,7 +30,7 @@
         transition: all 0.3s ease;
         position: relative;
         display: inline-block;
-        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+        
         outline: none;
 
 
@@ -45,7 +45,7 @@
         line-height: 42px;
         padding: 0;
         border-color: white;
-        border: none;
+   
 
 
 
@@ -66,6 +66,7 @@
         top: 0;
         background: rgba(2, 126, 251, 1);
         transition: all 0.3s ease;
+        
     }
 
     .btn-description:before {
@@ -81,6 +82,7 @@
     .btn-description:hover {
         background: transparent;
         box-shadow: none;
+        border:none;
     }
 
     .btn-description:hover:before {
@@ -131,7 +133,7 @@
         line-height: 42px;
         padding: 0;
         border-color: white;
-        border: none;
+       
 
 
 
@@ -167,6 +169,7 @@
     .btn-curiosidades:hover {
         background: transparent;
         box-shadow: none;
+        border:none;
     }
 
     .btn-curiosidades:hover:before {
@@ -219,7 +222,7 @@
         line-height: 42px;
         padding: 0;
         border-color: white;
-        border: none;
+       
 
 
 
@@ -255,6 +258,7 @@
     .btn-weather:hover {
         background: transparent;
         box-shadow: none;
+        border:none;
     }
 
     .btn-weather:hover:before {
@@ -305,8 +309,7 @@
         line-height: 42px;
         padding: 0;
         border-color: white;
-        border: none;
-
+   
 
 
     }
@@ -341,6 +344,7 @@
     .btn-structure:hover {
         background: transparent;
         box-shadow: none;
+        border:none;
     }
 
     .btn-structure:hover:before {

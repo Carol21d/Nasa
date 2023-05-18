@@ -89,7 +89,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 32px 0 32px 32px;
-  border-left: 2px solid rgb(245, 0, 0);
+  border-left: 2px solid rgb(255, 255, 255);
   font-size: 1.125rem;
 }
 .timeline-item {
@@ -115,7 +115,7 @@ img {
   margin-left: -52px;
   flex-shrink: 0;
   overflow: hidden;
-  box-shadow: 0 0 0 6px #fff;
+  box-shadow: 0 0 0 6px #faf9f9;
 
   svg {
       width: 20px;
@@ -156,7 +156,8 @@ img {
     display: block;
     text-decoration: underline;
     display: flex;
- margin-top: 0.2em;
+    margin-top: 0.2em;
+    color: white;
 }
 </style>
 
