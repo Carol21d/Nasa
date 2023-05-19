@@ -1,5 +1,9 @@
 <script setup></script>
 <template>
+
+  <div class="container-menu">
+
+ 
     <div class="modal-container">
         <input id="modal-toggle-comet" type="checkbox">
         <label class="modal-btn" for="modal-toggle-comet">What is a Comet?</label>
@@ -44,6 +48,7 @@
         <p>An eclipse happens when a planet or a moon gets in the way of the Sun’s light. Here on Earth, we can experience two kinds of eclipses: solar eclipses and lunar eclipses.</p>
       </div>
     </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -58,6 +63,14 @@ body {
   background: #ccc;
   overflow: hidden;
 }
+
+
+.container-menu{
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 15em;
+    top: 15em;
 
 
 .modal-container {
@@ -182,5 +195,5 @@ p {
   color: black;
 }
 
-
+}
 </style>

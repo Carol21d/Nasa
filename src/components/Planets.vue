@@ -85,7 +85,7 @@ img {
 }
 
 li{
-    top:1em;
+    top:3em;
     left: .1rem;
 }
 
@@ -99,7 +99,7 @@ li{
   padding: 32px 0 32px 32px;
   border-left: 2px solid rgb(255, 255, 255);
   font-size: 1.125rem;
-   height: 36em;
+   height: 34em;
 }
 .timeline-item {
   display: flex;
