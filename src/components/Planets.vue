@@ -1,4 +1,6 @@
 <script setup>
+import {useRouter} from 'vue-router';
+
 
 
 const props = defineProps({
@@ -23,23 +25,23 @@ const props = defineProps({
 const getPlanet = (planetName) => {
     switch (planetName) {
         case "Sol": 
-            return "../../src/assets/sol.png";
+            return "../../src/assets/TimelinePlanets/sol.png";
         case "Mercurio":
-            return "../../src/assets/mercurio.png";
+            return "../../src/assets/TimelinePlanets/mercurio.png";
         case "Venus":
-            return "../../src/assets/venus.png";
+            return "../../src/assets/TimelinePlanets/venus.png";
         case "Tierra":
-            return "../../src/assets/earth.png";
+            return "../../src/assets/TimelinePlanets/earth.png";
         case "Marte":
-            return "../../src/assets/mars.png";
+            return "../../src/assets/TimelinePlanets/mars.png";
         case "Jupiter":
-            return "../../src/assets/jupiter.png";
+            return "../../src/assets/TimelinePlanets/jupiter.png";
         case "Saturno":
-            return "../../src/assets/saturn.png";
+            return "../../src/assets/TimelinePlanets/saturn.png";
         case "Urano":
-            return "../../src/assets/urano.png";
+            return "../../src/assets/TimelinePlanets/urano.png";
         case "Neptuno":
-            return "../../src/assets/neptuno.png";
+            return "../../src/assets/TimelinePlanets/neptuno.png";
         default:
             return "";
     }
@@ -51,8 +53,9 @@ const getPlanet = (planetName) => {
    
     <ol class="timeline">
         <li v-for="planet in planets" :key="planet.name" class="timeline-item">
-            <span class="timeline-item-icon | avatar-icon">
-                <i class="avatar">
+          
+            <span class="timeline-item-icon | avatar-icon" >
+                      <i class="avatar">
                     <img :src="getPlanet(planet.name)" alt="name of planet" />
                 </i>
             </span>
@@ -81,6 +84,11 @@ img {
   max-width: 100%;
 }
 
+li{
+    top:1em;
+    left: .1rem;
+}
+
 .timeline {
   width: 85%;
   max-width: 700px;
@@ -91,6 +99,7 @@ img {
   padding: 32px 0 32px 32px;
   border-left: 2px solid rgb(255, 255, 255);
   font-size: 1.125rem;
+   height: 36em;
 }
 .timeline-item {
   display: flex;

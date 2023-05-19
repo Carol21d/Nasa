@@ -1,11 +1,17 @@
 <script>
+
+
 </script>
 <template>
     <div class="menu">
-        <button type="text" name="description" class="btn btn-description"><span>DESCRIPTION</span></button>
-        <button type="text" name="curiosidades" class="btn btn-curiosidades"><span>CURIOSITIES</span></button>
-        <button type="text" name="weather" class="btn btn-weather"><span>WEATHER IN</span></button>
-        <button type="text" name="structure" class="btn btn-structure"><span>STRUCTURE & SURFACE</span></button>
+        <button type="text" name="description" class="btn btn-description" @click="description()"><span>DESCRIPTION</span></button>
+        <button type="text" name="curiosidades" class="btn btn-curiosidades" @click="curiosidades()"><span>CURIOSITIES</span></button>
+        <button type="text" name="weather" class="btn btn-weather" @click="weather()"><span>WEATHER IN</span></button>
+        <button type="text" name="structure" class="btn btn-structure" @click="structure()"><span>STRUCTURE & SURFACE</span></button>
+
+        <div class="modal" v-if="mostrarModal">
+            <div class="modal-content">{{ datos }}</div>
+        </div>
 
     </div>
 </template>
