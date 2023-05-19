@@ -26,15 +26,15 @@ onMounted(()  =>{
 </script>
 <template>
   <div class="container">
-    <div class="aside">
-      <Planets />
+     <div class="aside">
+      <!-- <Planets /> -->
     </div>
     
     <div class="main">
-       <Ellipse class="container-ellipse" />
-        <CardNasa  class="container-nasa"  :datosNasa="datosNasa"/>
+       <!-- <Ellipse class="container-ellipse" />
+        <CardNasa  class="container-nasa"  :datosNasa="datosNasa"/> -->
        <Menu class="container-menu" /> 
-      <LogoNasa class="nasa"/> 
+      <!-- <LogoNasa class="nasa"/>  -->
     </div>
   </div>
 </template>
