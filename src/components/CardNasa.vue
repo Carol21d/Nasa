@@ -12,7 +12,7 @@ const props = defineProps({
 <template>
     <div class="container">
         <div class="card">
-            <p >{{ datosNasa.copyright }}</p>
+            <p>{{ datosNasa.copyright }}</p>
             <p>{{ datosNasa.date }}</p>
             <p>{{ datosNasa.explanation }}</p>
             <div class="card_image"></div>
@@ -20,15 +20,7 @@ const props = defineProps({
     </div>
 </template>
 
-
-            
-      
-
-        
-
 <style lang="scss">
-
-
 .card {
     margin: 30px auto;
     width: 400px;
@@ -73,13 +65,12 @@ const props = defineProps({
 }
 
 p {
-    color:white;
+    color: white;
     margin: 1em;
 }
-
-
-
-
-
-
 </style>
+
+            
+      
+
+        
