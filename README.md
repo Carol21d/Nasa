@@ -31,6 +31,8 @@
 - SpringBoot
 - Axios
 - APiNASA
+- GIT 
+- GITHUB
 
 
 # Frontend
