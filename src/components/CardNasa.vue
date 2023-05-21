@@ -67,6 +67,7 @@ const props = defineProps({
 p {
     color: white;
     margin: 1em;
+    font-size: 13.6px;
 }
 </style>
 
