@@ -9,6 +9,11 @@
 ## Task 2: Break down phases, tasks and milestones to organize the two-person team.
 
 
+## App structure
+![NasaApp drawio](https://github.com/Carol21d/Nasa/assets/117730103/67a963cf-5d36-4641-8117-a712e81ef195)
+## Database design
+<img width="1078" alt="dbnasa" src="https://github.com/Carol21d/Nasa/assets/117730103/8cb7d5b5-da8c-49db-a3b1-ff12276ffca6">
+
 # FIGMA
 ## SKETCH
 ![DASHBOARD-SKETCH](https://github.com/Carol21d/Nasa/assets/117730103/fdb5c4de-6938-4be4-b563-ef0b1915316c)
